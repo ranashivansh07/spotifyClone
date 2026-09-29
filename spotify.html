@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music For Everyone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/logo.png">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+            <div id="signupForm" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Signup with spotify</h2>
+                    <form onsubmit="showAlert(); return false;">
+                        <label for="email"><i class="ri-mail-fill"></i></label>
+                        <input type="email" placeholder="email" maxlength="30" class="input"><br><br>
+                        <label for="password"><i class="ri-lock-2-fill"></i></label>
+                        <input type="password" placeholder="password" maxlength="30" class="input"><br>
+                         <input type="submit" value="create account" id="account" class="input1">
+                        <!-- <span class="badge rounded-pill text-bg-dark" id="account">create account</span> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div id="main">
+       <div id="sidebar">
+            <div class="container">
+                <i class="fa-solid fa-house"></i>  Home
+                <br><i class="fa-solid fa-magnifying-glass"></i>  Search
+            </div>
+            <div class="lib">
+                <i class="fa-solid fa-book"></i>Your Library &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-plus"></i>
+                <div id="play">
+                    <h5>Create your first playlist</p>
+                    <h6>It's easy, we'll help you</h6>
+                    <span class="badge rounded-pill text-bg-light">create playlist</span>
+                </div>
+                <!-- <div class="lib2">
+                    <div id="ha"><h5>Let's find some podcast to follow</h5></div>
+                    <h6>we'll keep you updated on new episodes</h6>
+                    <span class="badge rounded-pill text-bg-light">Browse Podcast</span>
+                </div> -->
+                <div class="day">
+                    <div class="cards1">
+                        <div class="card10" style="width: 20rem; " >
+                        <!-- <img src="https://th.bing.com/th/id/OIP.wBkFaDZzPpF1axIYW72VDgAAAA?w=287&h=162&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="..."> -->
+                            <a href="https://open.spotify.com/artist/6DARBhWbfcS9E4yJzcliqQ"><img src="https://i1.sndcdn.com/artworks-7PzJi04hurFk1ZPP-ukzDYA-t240x240.jpg" class="card-img-top1" alt=""></a>
+                            <div class="card-body1">
+                                <p id="card-info2">Karan Aujla</p>
+                                <p class="card-text2">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="cards1">
+                        <div class="card10" style="width: 20rem; margin-top: -15px;" >
+                        <!-- <img src="https://th.bing.com/th/id/OIP.wBkFaDZzPpF1axIYW72VDgAAAA?w=287&h=162&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="..."> -->
+                           <a href="https://open.spotify.com/artist/3OQRPFFS3OsltFjFAXu1kE"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Parmish_Verma_snapped_promoting_Kanneda.jpg/250px-Parmish_Verma_snapped_promoting_Kanneda.jpg" class="card-img-top1" alt=""></a>
+                            <div class="card-body1">
+                                <p id="card-info2">Parmish verma</p>
+                                <p class="card-text2">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="cards1">
+                        <div class="card10" style="width: 20rem; margin-top: -15px;" >
+                        <!-- <img src="https://th.bing.com/th/id/OIP.wBkFaDZzPpF1axIYW72VDgAAAA?w=287&h=162&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="..."> -->
+                           <a href="https://open.spotify.com/artist/2rN8LHqK4TBI7y3d9POvJb"> <img src="https://yt3.googleusercontent.com/W8VHZ7ECusfUstiaqh4l87Ul59UChBSRMpLAXsDN-dKmLMbY7EEpUKqF-WZ8zitU8toi_uldkA=s900-c-k-c0x00ffffff-no-rj" class="card-img-top1" alt=""></a>
+                           <div class="card-body1">
+                                <p id="card-info2">Dhanda nyoliwala</p>
+                                <p class="card-text2">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div id="content">
+            <nav class="navbar sticky-top bg-body-dark">
+                <div class="container-fluid">
+                        <div id="lr">
+                            <i class="fa-solid fa-chevron-left" id="left"></i>
+                            <i class="fa-solid fa-chevron-right" id="hide"></i>
+                        </div>
+                        <div id="bar">
+                            <input type="text" placeholder="Search for artists, songs, or podcasts" class="form-control me-2" id="search-input">
+                            <div id="gl"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                       <div id="sp"> 
+                            <span class="badge rounded-pill text-bg-light" id="hide" >explore premium</span>
+                            <span class="badge nav rounded-pill text-bg-dark-black"><i class="fa-regular fa-circle-down"></i>Install app</span>
+                            <i class="fa-regular fa-user" id="login" style="font-size: small ;"></i>
+                        </div>
+                </div>
+            </nav>
+                <h2>Recently played</h2>
+                <div class="cards">
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b1dbc3fe95acdeaafaaa2f6f" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO1Nekhj"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p id="card-info">Top 50 - masoom songs</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://yt3.googleusercontent.com/IcDlJETsN0PNv9X8LR37VeGWZEpBAoLuHiECNDuYnakEJmJOH5CVwBYrHBiWr3t9ofmcbZE6UA=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO1Q5XSb"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Top 50 - Sumit parta songs</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://i1.sndcdn.com/artworks-qO4bGb1zXf1Y2DL9-a2ugTA-t500x500.jpg" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/album/7w80tk12K6vKuXC7MriUIh"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Top 50 - Arjan dhillon songs</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="trend">Trending now for you</h2>
+                 <div class="cards">
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxdDtBUr9ndXSf2ON9HGMjyz7KOQPuRoR0Iw&s" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/track/55V3CD9Uljuwe6HRNLIVL6"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Pistol</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                     <div class="card" style="width: 11rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxdDtBUr9ndXSf2ON9HGMjyz7KOQPuRoR0Iw&s" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/track/55V3CD9Uljuwe6HRNLIVL6"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">vashith</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                         <img src="https://i.scdn.co/image/ab67616d00001e024c81f86297c2e3fac6a4c6cd" class="card-img-top" alt="">
+                         <div id="playbar">
+                            <a href="https://open.spotify.com/track/22ZIAjVRJTjYj5EwD0MjEJ"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">2 Khatola </p>
+                            <p class="card-text">Your daily updates of the most viewed track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://cdn-images.dzcdn.net/images/cover/3aa475425a11e386f32cad57a4dd6e21/1900x1900-000000-80-0-0.jpg" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/track/1rWSLMe0neIBRZi15GgfY6"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Ghane gande</p>
+                            <p class="card-text">Your daily updates of the most viewed track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                         <img src="https://i.scdn.co/image/ab67616d00001e0273db28dd510b75b2b676b9b5" class="card-img-top" alt="">
+                         <div id="playbar">
+                            <a href="https://open.spotify.com/track/7oFrQLTu7Bi1xmTYLbBxHf"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Raat ka shikari</p>
+                            <p class="card-text">Your daily updates of the most viewed track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://c.saavncdn.com/734/Rail-Haryanvi-2025-20250513163335-500x500.jpg" class="card-img-top" alt="...">
+                        <div id="playbar">
+                          <a href="https://open.spotify.com/track/6z2XnVsRqnGUoyNQMNOwax"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Rail</p>
+                            <p class="card-text">Your daily updates of the most viewed track...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://i1.sndcdn.com/artworks-qMWFjOjRp42nomzu-uq0Y8w-t500x500.png" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <a href="https://open.spotify.com/album/7w80tk12K6vKuXC7MriUIh"><img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;"></a>
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Patandar</p>
+                            <p class="card-text">Your daily updates of the most viewed track...</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Featured charts</h2>
+                 <div class="cards">
+                    <div class="card" style="width: 11rem;">
+                        <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/card5img.jpeg" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;">
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Top Song global</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                     <div class="card" style="width: 11rem;">
+                        <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/card6img.jpeg" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;">
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Top Songs India</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                     <div class="card" style="width: 11rem;">
+                        <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/card1img.jpeg" class="card-img-top" alt="...">
+                        <div id="playbar">
+                            <img src="https://pnghq.com/wp-content/uploads/spotify-play-button-free-unlimited-png-download-92515.png" alt="" style="height:3rem; width: 3rem; opacity: 1;">
+                        </div>
+                        <div class="card-body">
+                            <p id="card-info">Top 50 - global</p>
+                            <p class="card-text">Your daily updates of the most track...</p>
+                        </div>
+                    </div>
+                </div>
+               <div id="footer">
+                <div id="line"></div>
+               </div>
+        </div>
+       <div id="music">
+            <div class="day">
+                <div class="cards1">
+                    <div class="card1" style="width: 15rem;">
+                         <img src="https://i.scdn.co/image/ab67616d00001e024c81f86297c2e3fac6a4c6cd" class="card-img-top" alt="">
+                        <div class="card-body1">
+                            <p id="card-info1">2 khatole</p>
+                            <p class="card-text1">Masoom sharma</p>
+                        </div>
+                        <div id="he">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-image"></i></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="pause">
+                <div id="p2">
+               <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/player_icon1.png" alt=""> 
+               <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/player_icon2.png" alt="">
+                <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/play_musicbar.png" alt="" style="height:1.8rem; width: 1.8rem; opacity: 1;">
+               <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/player_icon4.png" alt="">
+               <img src="https://raw.githubusercontent.com/apna-college/Delta/b796633776956c4f62beb6fa2d3797bbcb217dbf/CSS/Project/assets/player_icon5.png" alt="">
+                </div>
+                <div class="p3">
+                    <span class="ctime">00:00</span>
+                    <input type="range" min="0" max="100" class="p4">
+                    <span class="etime">33:00</span>
+                </div>
+            </div>
+            <div class="sound">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-microphone"></i>
+               <i class="fa-solid fa-calendar-day"></i>
+               <i class="fa-solid fa-satellite-dish"></i>
+                <i class="fa-solid fa-headphones"></i>
+                <div class="p5">
+                    <input type="range" min="0" max="100" class="p6">
+                </div>
+            </div>
+       </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="spotify.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 A responsive, feature-rich web music player built with **React.js** and **Tailwind CSS** that replicates the core UI, layout, and playback features of Spotify.
 
-![Spotify Clone Preview](https://via.placeholder.com/800x450.png?text=Spotify+Clone+UI+Preview) <!-- Replace with a link to your screenshot/gif -->
+ <!-- Replace with a link to your screenshot/gif -->
 
 ---
 
